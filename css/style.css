@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+ 
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  h2, h3 {
+    color: #040404;
+  }
+  
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+aside {
+    flex: 1;
+  }
+header.navbar-container {
+    display: inline;
+  }
+
+header.navbar-container .navbar {
+    background-color: #c3b87d;
+    padding: 5px;
+  text-align: center;
+    position: sticky;
+    top: 0;
+ }
+
+header.navbar-container .navbar  a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+   
+    color: white;
+  }
+   
+header.navbar-container .navbar a:hover {
+    font-weight: bold;
+  }
+
+header.navbar-container .jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #c3b87d;
+  text-align: center;
+  color: rgb(5, 5, 5);
+}
+  
+  .featured-image {
+    width: 50%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+
+
+  .profile{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .profile header {
+    text-align: center;
+  }
+
+  .profile img {
+    width: 200px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 50px;
+  }
+  
+
+.social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+.social-media ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000000;
+    transition: all 0.1s ease-in-out;
+  }
+  
+ .social-media ul a:hover {
+    color: #cdb3d6;
+  }
+
+  footer {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #c3b87d;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
